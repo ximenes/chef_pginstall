@@ -2,8 +2,10 @@ jenkins Cookbook
 ================
 
  - Author: Eduardo Ximenes Soares <duximenes@gmail.com>
- - Cookbook install and configure: jenkins / jdk / jboss server / monit 
- - Test: chef-solo AMI UBNTU SERVER EC2 and AMI LINUX AMAZON
+ - Cookbook install and configure: PostgreSQL 9.3.1
+ - Test: chef-solo AMI UBNTU SERVER EC2 | UBUNTU SERVER 
+ - Directory database: /database 
+	- Optimize RAID EBS
 
 
 HowTo
@@ -30,15 +32,15 @@ HowTo
 		- cookbook_path "/opt/chef-repo/cookbooks"
 
  - Download REPO: 
-	- git clone https://github.com/ximenes/jenkins.git -l /opt/chef-repo/cookbooks/jenkins
+	- git clone https://github.com/ximenes/chef_pginstall.git  -l /opt/chef-repo/cookbooks/pginstall
 
  - Create your json (/opt/chef-repo/JSON_NAME.json)
 	- Add line: 
-		-  {   "run_list": [ "recipe[jenkins]" ] } 
+		-  {   "run_list": [ "recipe[pginstall]" ] } 
 
  - Execute CHEF-SOLO
 	- chef-solo -c /opt/chef-repo/solo.rb -j /opt/chef-repo/JASON_NAME.json
 
 
- - Access:
-	- http://your_ip:8080/jenkins
+ - Execute:
+	- # ps -ef | grep postgres
