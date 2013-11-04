@@ -19,7 +19,7 @@ HowTo
  - Download and configure CHEF-REPO structure
 	- wget http://github.com/opscode/chef-repo/tarball/master
 	- tar -zxvf master  
-	- mv opscode-chef-repo-ef75514/ /opt/chef-repo
+	- mv opscode-chef-repo-f9d4b0c/ /opt/chef-repo
 	- mkdir /opt/chef-repo/.chef
  
  - Configre cookbook path (/opt/chef-repo/.chef/knife.rb)
