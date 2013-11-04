@@ -19,7 +19,7 @@ package "libreadline6-dev" do
   action :install
 end
 
-bash "install_program" do
+bash "download_install_pg" do
   user "root"
   code <<-EOH
     wget http://ftp.postgresql.org/pub/source/v9.3.1/postgresql-9.3.1.tar.gz -O /opt/postgresql-9.3.1.tar.gz
