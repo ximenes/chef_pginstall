@@ -22,7 +22,7 @@ HowTo
 	- mv opscode-chef-repo-f9d4b0c/ /opt/chef-repo
 	- mkdir /opt/chef-repo/.chef
  
- - Configre cookbook path (/opt/chef-repo/.chef/knife.rb)
+ - Configure cookbook path (/opt/chef-repo/.chef/knife.rb)
 	- Add line
 		- cookbook_path [ '/opt/chef-repo/cookbooks' ]
  
