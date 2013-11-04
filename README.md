@@ -1,4 +1,4 @@
-jenkins Cookbook
+PostgreSQL 9.3.1 Cookbook
 ================
 
  - Author: Eduardo Ximenes Soares <duximenes@gmail.com>
