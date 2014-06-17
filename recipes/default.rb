@@ -96,7 +96,8 @@ execute "initdb" do
 end
 
 
-service "postgresql" do
- action :start
+execute "pg_start" do 
+  command "su postgres -l -c 'pg_ctl start'"
+  action :run
 end
-
+  
